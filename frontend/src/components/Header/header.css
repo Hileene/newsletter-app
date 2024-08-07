@@ -1,0 +1,11 @@
+/*******************************MOBILE FIRST*********************************/
+.signup-img {
+  width: 100%;
+}
+
+.signup-content {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
