@@ -6,7 +6,7 @@ import RobotoRegular from './assets/fonts/Roboto-Regular.ttf'
 import RobotoBold from './assets/fonts/Roboto-Bold.ttf'
 import './index.css'
 
-/*Global Style*/
+/*Custom theme to override Material UI default style*/
 const theme = createTheme({
   typography: {
     fontFamily: 'Roboto,',
@@ -16,13 +16,13 @@ const theme = createTheme({
       styleOverrides: {
         '@font-face': [
           {
-            fontFamily: 'Roboto',
+            fontFamily: 'Roboto, sans-serif',
             fontStyle: 'normal',
             fontWeight: 400,
             src: `url(${RobotoRegular}) format('truetype')`,
           },
           {
-            fontFamily: 'Roboto',
+            fontFamily: 'Roboto, sans-serif',
             fontStyle: 'normal',
             fontWeight: 700,
             src: `url(${RobotoBold}) format('truetype')`,
@@ -35,6 +35,7 @@ const theme = createTheme({
           padding: 0,
           boxSizing: 'border-box',
           minHeight: '100vh',
+          color: 'hsl(234, 29%, 20%)',
         },
       },
     },
