@@ -7,7 +7,8 @@ function Header() {
   return (
     <header>
       <img src={SignupImg} alt="Signup Illustration" className="signup-img" />
-      <Box sx={{ fontFamily: 'Roboto' }}>
+      {/*Customized Material UI components to override default styles*/}
+      <Box sx={{ fontFamily: 'Roboto,sans-serif' }}>
         <div className="signup-content">
           <Typography
             sx={{ fontWeight: '700', fontSize: '2.5rem' }}
