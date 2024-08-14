@@ -9,7 +9,7 @@ import './index.css'
 /*Custom theme to override Material UI default style*/
 const theme = createTheme({
   typography: {
-    fontFamily: 'Roboto,',
+    fontFamily: 'Roboto sans-serif,',
   },
   components: {
     MuiCssBaseline: {
@@ -28,15 +28,6 @@ const theme = createTheme({
             src: `url(${RobotoBold}) format('truetype')`,
           },
         ],
-        body: {
-          display: 'flex',
-          flexDirection: 'column',
-          margin: 0,
-          padding: 0,
-          boxSizing: 'border-box',
-          minHeight: '100vh',
-          color: 'hsl(234, 29%, 20%)',
-        },
       },
     },
   },
