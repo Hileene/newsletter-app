@@ -1,5 +1,17 @@
 /*Global Styles*/
 
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  src: url('./assets/fonts/Roboto-Bold.ttf') format('truetype');
+}
+
 :root {
   --tomato: hsl(4, 100%, 67%);
   --dark-slate-grey: hsl(234, 29%, 20%);
@@ -8,8 +20,23 @@
   --white: hsl(0, 0%, 100%);
 }
 
-/*@media screen and (min-width: 768px) {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  display: flex;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+@media (min-width: 768px) {
   body {
-    background-color: var(--dark-slate-grey) !important;
+    background-color: var(--dark-slate-grey);
   }
-}*/
+}

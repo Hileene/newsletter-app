@@ -1,1 +1,43 @@
 /********************MOBILE FIRST**************************/
+/* App.css */
+.signup-container {
+  display: grid;
+  min-height: 100vh;
+  color: var(--white);
+  width: 100%;
+}
+
+.signup-preview {
+  width: 100%;
+}
+
+.signup-content {
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+  background-color: var(--white);
+  color: var(--charcoal-grey);
+  padding: 2rem;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .signup-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  /*.signup-preview {
+    display: block;
+    max-width: 600px;
+    width: 80%;
+  }*/
+
+  .signup-content {
+    max-width: 400px;
+    width: 50%;
+    padding: 3rem;
+  }
+}
