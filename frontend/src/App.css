@@ -46,10 +46,10 @@
       grid-template-areas:
         'content preview'
         'footer footer';
-      grid-template-columns: 2fr 2fr; /* Ajuste les proportions */
+      grid-template-columns: 2fr 2fr;
       grid-template-rows: auto auto;
-      max-width: 1000px; /* Largeur du conteneur en desktop */
-      padding: 1px; /* Plus d’espace pour le design desktop */
+      max-width: 1000px;
+      padding: 1px;
       box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
       border-radius: 40px;
     }
@@ -60,17 +60,17 @@
       justify-content: center;
       height: 100%;
       width: 100%;
-      padding: 1rem; /* Ajoutez un padding pour l'image */
+      padding: 1rem;
     }
 
     .signup-content {
       grid-area: content;
-      padding: 1rem; /* Ajoutez un padding pour le contenu */
+      padding: 1rem;
     }
 
     .signup-footer {
       grid-area: footer;
-      padding: 2rem; /* Ajoutez un padding pour le footer */
+      padding: 2rem;
     }
   }
 }
