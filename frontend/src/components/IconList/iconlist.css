@@ -1,8 +1,7 @@
-/* iconlist.css */
 ul {
   list-style: none;
   padding: 0;
-  margin: 0 0 2rem;
+  margin: 0 0 3rem;
 }
 
 li {
@@ -10,7 +9,7 @@ li {
   align-items: center;
   margin-bottom: 1rem;
   font-size: 1rem;
-  color: hsl(234, 29%, 20%);
+  color: var(--dark-slate-grey);
 }
 
 li img {
