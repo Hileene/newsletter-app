@@ -35,6 +35,11 @@ img {
   display: block;
   max-width: 100%;
 }
+
+a {
+  text-decoration: none;
+  color: var(--tomato);
+}
 @media (min-width: 768px) {
   body {
     background-color: var(--dark-slate-grey);
