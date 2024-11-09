@@ -2,13 +2,13 @@
 .signup-heading {
   font-size: 2rem;
   font-weight: 700;
-  color: hsl(234, 29%, 20%);
+  color: var(--dark-slate-grey);
   margin-bottom: 1rem;
 }
 
 .signup-text {
   font-size: 1rem;
   font-weight: 400;
-  color: hsl(235, 18%, 26%);
+  color: var(--charcoal-grey);
   margin-bottom: 2rem;
 }
