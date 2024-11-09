@@ -3,12 +3,18 @@
   font-size: 2rem;
   font-weight: 700;
   color: var(--dark-slate-grey);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .signup-text {
   font-size: 1rem;
   font-weight: 400;
-  color: var(--charcoal-grey);
+  color: var(--dark-slate-grey);
   margin-bottom: 2rem;
+}
+/*Desktop layout*/
+@media (min-width: 900px) {
+  .signup-heading {
+    font-size: 4rem;
+  }
 }
