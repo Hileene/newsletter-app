@@ -1,43 +1,70 @@
 /********************MOBILE FIRST**************************/
-/* App.css */
+
 .signup-container {
   display: grid;
-  min-height: 100vh;
-  color: var(--white);
-  width: 100%;
+  grid-template-areas:
+    'preview'
+    'content'
+    'footer footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 80vh;
+  background-color: var(--white);
 }
 
 .signup-preview {
-  width: 100%;
+  grid-row: 1;
+  grid-column: 1;
 }
 
 .signup-content {
-  max-width: 400px;
-  width: 100%;
-  text-align: left;
-  background-color: var(--white);
-  color: var(--charcoal-grey);
-  padding: 2rem;
+  grid-row: 2;
+  grid-column: 1;
+  padding: 1rem;
 }
 
-/* Desktop layout */
+/* Tablet layout */
 @media (min-width: 768px) {
   .signup-container {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    overflow: hidden;
   }
 
-  /*.signup-preview {
-    display: block;
-    max-width: 600px;
-    width: 80%;
-  }*/
+  /* Desktop layout */
+  @media (min-width: 900px) {
+    .signup-container {
+      grid-template-areas:
+        'content preview'
+        'footer footer';
+      grid-template-columns: 2fr 2fr; /* Ajuste les proportions */
+      grid-template-rows: auto auto;
+      max-width: 1000px; /* Largeur du conteneur en desktop */
+      padding: 1px; /* Plus d’espace pour le design desktop */
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+      border-radius: 40px;
+    }
+    .signup-preview {
+      grid-area: preview;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      padding: 1rem; /* Ajoutez un padding pour l'image */
+    }
 
-  .signup-content {
-    max-width: 400px;
-    width: 50%;
-    padding: 3rem;
+    .signup-content {
+      grid-area: content;
+      padding: 1rem; /* Ajoutez un padding pour le contenu */
+    }
+
+    .signup-footer {
+      grid-area: footer;
+      padding: 2rem; /* Ajoutez un padding pour le footer */
+    }
   }
 }
