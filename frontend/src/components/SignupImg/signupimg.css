@@ -1,6 +1,7 @@
 .signup-image_mob {
+  display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .signup-image_desk {
@@ -11,8 +12,11 @@
   .signup-image_mob {
     display: none;
   }
+
   .signup-image_desk {
     display: block;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
