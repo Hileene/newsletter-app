@@ -26,6 +26,12 @@
   padding: 1rem;
 }
 
+.signup-footer {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--dark-slate-grey);
+}
+
 /* Tablet layout */
 @media (min-width: 768px) {
   .signup-container {
