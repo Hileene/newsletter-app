@@ -15,8 +15,8 @@ function App() {
         <Header />
         <IconList />
         <Form />
+        <Footer className="signup-footer" />
       </div>
-      <Footer className="signup-footer" />
     </main>
   )
 }
