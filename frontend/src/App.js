@@ -3,6 +3,7 @@ import SignupImg from './components/SignupImg/SignupImg'
 import Header from './components/Header/Header'
 import IconList from './components/IconList/IconList'
 import Form from './components/Form/Form'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <IconList />
         <Form />
       </div>
+      <Footer className="signup-footer" />
     </main>
   )
 }
