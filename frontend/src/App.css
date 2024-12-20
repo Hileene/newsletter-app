@@ -1,15 +1,13 @@
 /********************MOBILE FIRST**************************/
 .signup-section {
   width: 100%;
-  max-width: 928px; /* Common desktop breakpoint */
+  max-width: 928px;
 }
 
 .signup-container {
   display: grid;
   grid-template-rows: auto auto;
   gap: 1rem;
-  /*max-width: 600px;
-  margin: 0 auto;*/
   width: 100%;
   background-color: var(--white);
 }
@@ -97,7 +95,6 @@
 @media (min-width: 900px) {
   .signup-container {
     grid-template-areas: 'content preview';
-    /*grid-template-columns: 6fr 6fr;*/
     min-height: 593px;
     overflow: hidden; /* Garantit que les bords arrondis s'appliquent */
   }
@@ -105,7 +102,6 @@
   .signup-preview {
     grid-area: preview;
     padding: 1.5rem;
-    /*max-height: 100%; /* Limite la hauteur */
     display: flex;
     justify-content: center;
     align-items: center;
