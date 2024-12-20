@@ -1,0 +1,11 @@
+/********************MOBILE FIRST**************************/
+
+.success-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 80vh;
+  background-color: var(--white);
+}
