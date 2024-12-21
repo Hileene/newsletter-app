@@ -5,13 +5,18 @@ import './success.css'
 function Success({ onDismiss }) {
   return (
     <div className="success-container">
-      <img src={SuccessIcon} alt="Success Icon" />
-      <h1>Thanks for subscribing!</h1>
-      <p>
-        A confirmation email has been sent to ash@loremcompany.com. Please open
-        it and click the button inside to confirm your subscription.
-      </p>
-      <button className="dismiss-btn" onClick={onDismiss}>
+      <div className="success-content">
+        <img className="success-icon" src={SuccessIcon} alt="Success Icon" />
+        <div>
+          <h1 className="success-heading">Thanks for subscribing!</h1>
+          <p className="newsletter-text">
+            A confirmation email has been sent to&nbsp;
+            <strong>ash@loremcompany.com</strong>. Please open it and click the
+            button inside to confirm your subscription.
+          </p>
+        </div>
+      </div>
+      <button className="btn" onClick={onDismiss}>
         Dismiss message
       </button>
     </div>
