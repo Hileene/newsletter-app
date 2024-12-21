@@ -40,7 +40,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
   display: flex;
   justify-content: center;
@@ -52,12 +52,13 @@
 /* Contenu de la modale avec zoom */
 .modal-content {
   background-color: var(--white);
-  padding: 2rem;
-  border-radius: 8px;
+  min-height: 100vh;
+  width: 100%;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-  text-align: center;
   transform: scale(0.8); /* Point de départ du zoom */
   animation: zoomIn 0.5s ease-in-out forwards; /* Animation de zoom */
+  display: flex;
+  padding: 2rem;
 }
 
 /* Keyframes pour l'effet de zoom */
@@ -86,8 +87,16 @@
 @media (min-width: 768px) {
   .signup-container {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    border-radius: 40px;
+    border-radius: 36px;
     overflow: hidden;
+  }
+
+  .modal-content {
+    width: 100%;
+    max-width: 500px;
+    min-height: 400px;
+    border-radius: 36px;
+    /*padding: 3rem;*/
   }
 }
 
@@ -112,5 +121,10 @@
     padding: 5rem 2rem 2rem 4rem; /* Ajout de padding pour éviter les coupures */
     display: flex;
     flex-direction: column;
+  }
+
+  .modal-content {
+    max-width: 504px;
+    min-height: 400px;
   }
 }
