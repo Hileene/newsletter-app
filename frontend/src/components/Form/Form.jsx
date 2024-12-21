@@ -41,7 +41,7 @@ function Form({ onSuccess }) {
         }}
         //required
       />
-      <button type="submit" className="signup-form-btn">
+      <button type="submit" className="btn">
         Subscribe to monthly newsletter
       </button>
     </form>
