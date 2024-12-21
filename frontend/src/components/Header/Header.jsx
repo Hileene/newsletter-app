@@ -6,7 +6,7 @@ function Header() {
     <div>
       <h1 className="signup-heading">Stay updated!</h1>
 
-      <p className="signup-text">
+      <p className="newsletter-text">
         Join 60,000+ product managers receiving monthly updates on:
       </p>
     </div>
