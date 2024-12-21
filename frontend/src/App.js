@@ -22,7 +22,7 @@ function App() {
     <main>
       <section className="signup-section">
         <div className="signup-container">
-          <div className="signup-preview">
+          <div className={`signup-preview ${isSuccess ? 'blurred' : ''}`}>
             <SignupImg />
           </div>
           <div className={`signup-content ${isSuccess ? 'blurred' : ''}`}>
