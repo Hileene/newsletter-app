@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hileene.github.io/Newsletter-sign-up-with-success-message/",
+  "homepage": "https://hileene.github.io/newsletter-app/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
