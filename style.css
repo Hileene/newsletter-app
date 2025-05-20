@@ -1,0 +1,92 @@
+/*MOBILE FIRST*/
+/* Base styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 100%);
+  max-width: 1200px;
+  color: hsl(235, 18%, 26%);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+/* Preview styles */
+
+.mobile-preview {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Content styles */
+
+.signup-content {
+  margin: 0 auto;
+  padding: 20px;
+}
+.signup-header {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.signup-text {
+  line-height: 1.75rem;
+}
+
+.signup-list {
+  list-style: none;
+  padding: 0;
+}
+
+.signup-list li {
+  padding-left: 2rem;
+  background-image: url('./assets/images/icon-list.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1.2rem;
+  display: flex;
+  align-items: center; /* Vertically centers the text */
+  margin-bottom: 0.8rem;
+}
+
+/*Signup form styles*/
+.signup-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 0.5rem;
+}
+.email-label {
+  font-weight: 700;
+}
+.email-input {
+  padding: 1rem;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 10px;
+  font-size: 16px;
+  color: hsl(231, 7%, 60%);
+  margin-bottom: 1rem;
+}
+.submit-button {
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+/*Footer styles */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(4, 100%, 67%);
+}
