@@ -7,29 +7,50 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: hsl(0, 0%, 100%);
-  max-width: 1200px;
+  /*max-width: 1200px;*/
   color: hsl(235, 18%, 26%);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  background-color: hsl(234, 29%, 20%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  position: relative;
+  max-width: 375px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.signup-container {
+  max-width: 900px;
+  margin-bottom: 2rem;
 }
 /* Preview styles */
 
 .mobile-preview {
   width: 100%;
   object-fit: cover;
+  display: block;
 }
 
 /* Content styles */
 
 .signup-content {
+  display: flex;
   margin: 0 auto;
-  padding: 20px;
+  padding: 25px;
+  flex-direction: column;
+  justify-content: center;
 }
 .signup-header {
   font-weight: 700;
-  margin-bottom: 5px;
+  font-size: 2.5rem;
+  line-height: 1.5rem;
 }
 .signup-text {
   line-height: 1.75rem;
@@ -56,7 +77,6 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 20px;
   gap: 0.5rem;
 }
 .email-label {
@@ -84,6 +104,8 @@ body {
 /*Footer styles */
 
 .attribution {
+  position: absolute;
+  bottom: 0;
   font-size: 11px;
   text-align: center;
 }
