@@ -69,7 +69,7 @@ main {
   background-size: 1.2rem;
   display: flex;
   align-items: center; /* Vertically centers the text */
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 /*Signup form styles*/
@@ -81,6 +81,7 @@ main {
 }
 .email-label {
   font-weight: 700;
+  font-size: 14px;
 }
 .email-input {
   padding: 1rem;
@@ -111,4 +112,82 @@ main {
 }
 .attribution a {
   color: hsl(4, 100%, 67%);
+}
+
+/* Input error style */
+
+.email-label-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.input-error {
+  background-color: hsla(4, 100%, 67%, 0.15);
+  border: 1px solid hsl(4, 100%, 67%);
+  color: hsl(4, 100%, 67%);
+}
+
+.input-error::placeholder {
+  color: hsl(4, 100%, 67%);
+}
+
+/* Error message with transition */
+.error-message {
+  color: hsl(4, 100%, 67%);
+  font-size: 14px;
+  font-weight: 700;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.error-message.visible {
+  opacity: 1;
+  max-height: 100px;
+}
+
+/* Button styles */
+.submit-button {
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background: linear-gradient(to right, hsl(4, 100%, 67%), hsl(346, 100%, 66%));
+  box-shadow: 0px 10px 20px rgba(255, 98, 87, 0.5);
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.shake {
+  animation: shake 0.4s ease;
 }
