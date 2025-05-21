@@ -46,9 +46,13 @@
 
           <!--Sign-up Form -->
           <form class="signup-form">
-            <label for="email" class="email-label">Email address</label>
+            <div class="email-label-container">
+              <label for="email" class="email-label">Email address</label>
+              <span class="error-message">Valid email required</span>
+            </div>
             <input
               type="email"
+              id="email"
               placeholder="email@company.com"
               autocomplete="email"
               class="email-input"
